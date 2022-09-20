@@ -17,6 +17,12 @@
     <a href="{{route('products.index')}}" class="border border-blue-500 rounded px-4 pt-1 h-10 bg-white text-black font-semibold mx-2">Products</a>
 
     <a href="{{route('products.create')}}" class="text-black rounded px-4 pt-1 h-10 bg-white font-semibold mx-2 hover:bg-blue-600">Crear</a>
+
+
+    <a class="text-black rounded px-4 pt-1 h-10 bg-white font-semibold mx-2 hover:bg-blue-600" href="/">Inicio</a>
+
+
+
 </nav>
 
     <main class="p-16 flex justify-center">
