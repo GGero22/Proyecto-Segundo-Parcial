@@ -34,6 +34,9 @@ Route::post('/products/create', [ProductsController::class, 'store'])->name('pro
 Route::resource('products', ProductsController::class);
 
 
+
+
+
 Route::get('/controlados', [ControladosController::class, 'index']) ->name('controlados.index');
 
 
