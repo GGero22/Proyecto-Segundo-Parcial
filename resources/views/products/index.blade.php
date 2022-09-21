@@ -35,7 +35,7 @@
                         @method('delete')
                         <button class="bg-red-500 text-while px-3 py-1 rounded-sm mx-1">
                         <i class="fas fa-trash"></i></button>
-                        </form>
+                    </form>
 
 
 

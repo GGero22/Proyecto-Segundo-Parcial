@@ -6,6 +6,7 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\ControladosController;
 
 
 Route::get('/', function () {
@@ -31,3 +32,13 @@ Route::get('/products/create', [ProductsController::class, 'create'])->name('pro
 Route::post('/products/create', [ProductsController::class, 'store'])->name('products.store');
 
 Route::resource('products', ProductsController::class);
+
+
+Route::get('/controlados', [ControladosController::class, 'index']) ->name('controlados.index');
+
+
+Route::get('/controlados/create', [ControladosController::class, 'create']) ->name('controlados.create');
+
+Route::post('/controlados/create', [ControladosController::class, 'store']) ->name('controlados.store');
+
+Route::resource('controlados', ControladosController::class);
