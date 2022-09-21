@@ -18,6 +18,8 @@
             </tr>
         </thead>
         <tbody>
+
+
             @foreach ($controlados as $row)
 
 

@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\SuperAdminController;
+
 
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ControladosController;
@@ -45,3 +48,10 @@ Route::get('/controlados/create', [ControladosController::class, 'create']) ->na
 Route::post('/controlados/create', [ControladosController::class, 'store']) ->name('controlados.store');
 
 Route::resource('controlados', ControladosController::class);
+
+
+Route::get('/superadmin', [SuperAdminController::class, 'index'])->middleware('auth.superadmin')->name('superadmin.index');
+
+
+
+Route::get('/usuario', [UserController::class, 'index'])->middleware('auth.usuario')->name('usuario.index');

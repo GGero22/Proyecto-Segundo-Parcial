@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SuperUsuarioController extends Controller
+
+class SuperAdminController extends Controller
 {
     //
     public function index(){
 
-        return redirect()->to('/');
+
+        return view('controlados.create');
     }
 
 }

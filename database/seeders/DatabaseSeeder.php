@@ -16,12 +16,29 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $user = new User;
-        $user->name = 'aministrador';
+        $user->name = 'administrador';
         $user->email = 'administrador@gmail.com';
         $user->password = 'Pepian';
-        $user->role = 'admin';
+        $user->role = 'administrador';
+        $user->save();
+
+        $user = new User;
+        $user->name = 'Cliente';
+        $user->email = 'Cliente@gmail.com';
+        $user->password = 'pizza';
+        $user->role = 'usuario';
+        $user->save();
+
+        $user = new User;
+        $user->name = 'superadmin';
+        $user->email = 'superadmin@gmail.com';
+        $user->password = 'Farmacos';
+        $user->role = 'superadmin';
         $user->save();
     }
+
+
+
 
 
 }
